@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Videos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container6 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4em;
+        margin: 5% 10% 5% 10%;
+        justify-items: center;
+      }
+      .infoVid {
+        position: relative;
+        background-color: rgb(20, 20, 20);
+        border-radius: 10px;
+        transition: 0.3s ease;
+      }
+
+      .infoVid:hover {
+        transform: scale(1.2);
+      }
+
+      .infoVid img {
+        height: 10em;
+      }
+
+      .infoVid .play {
+        position: absolute;
+        height: 5em;
+        top: 40%;
+        right: 23%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .infoVid .play:hover {
+        height: 6em;
+        right: 20%;
+      }
+
+      .search {
+        margin: 2em 5% 2em 5%;
+        background-color: rgb(17, 17, 17);
+        height: 7vh;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 10px;
+      }
+
+      .search select,
+      .search input {
+        width: 20%;
+        height: 50%;
+        background-color: rgb(17, 17, 17);
+        position: relative;
+        top: 50%;
+        transform: translate(0%, -50%);
+        border-radius: 10px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Lobby info : <a>My Matches</a> |
+      <a href="//steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+        >Download App</a
+      >
+    </header>
+    <nav>
+      <div class="logo">
+        <a href="second.html"><img src="images/gamecontroller.svg" alt=""/></a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="games.html">GAMES</a></li>
+          <li><a href="tournaments.html">TOURNAMENTS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="videos.html" style="color: magenta;">VIDEOS</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn" onclick="window.location.href = 'login.html'">
+          LOGIN
+        </button>
+      </div>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder="Search Items" />
+    </div>
+
+    <div class="container6">
+      <div class="infoVid">
+        <img src="images/videos/video1.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video2.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video3.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video4.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video2.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video1.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video3.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video1.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video2.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video4.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video1.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+
+      <div class="infoVid">
+        <img src="images/videos/video3.jpg" alt="" />
+        <a href="https://www.youtube.com/watch?v=lhkyt50sfCw" target="_blank"
+          ><img src="images/play-button.svg" class="play"
+        /></a>
+        <p>
+          EPIC MOMENTS PUBG #23
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

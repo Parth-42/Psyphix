@@ -1,0 +1,489 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  background-color: #222222;
+  color: rgb(170, 170, 170);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landingMain img {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.landingMain .buttonz {
+  position: absolute;
+  top: 70%;
+  right: 50%;
+  transform: translate(50%, 0%);
+}
+
+.landingMain .buttonz button {
+  height: 5em;
+  width: 20em;
+}
+
+.landingMain .buttonz .btn {
+  background-color: orange;
+}
+
+.landingMain .buttonz .btn:hover {
+  box-shadow: 2px 2px 5px #f25116;
+}
+
+.landingMain .buttonz .btn2 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.landingMain .buttonz .btn2:hover {
+  border-color: orange;
+}
+
+.landingMain img {
+  background-attachment: scroll;
+}
+.logoMain {
+  position: absolute;
+  top: 12%;
+  left: 49.6%;
+  transform: translate(-50%, 0%);
+  border-radius: 5000px;
+  transition: 2s ease;
+  cursor: pointer;
+}
+
+.logoMain img {
+  width: 23em;
+  height: 23em;
+  border-radius: 5000px;
+}
+
+.logoMain {
+  box-shadow: 0 0 100px orange;
+}
+
+.logoMain:hover {
+  box-shadow: 0 0 300px orange;
+}
+
+.landingSecond {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0px;
+  flex-wrap: wrap;
+}
+
+.practice .fight .earn {
+  display: block;
+}
+
+.logo img {
+  height: 230px;
+  width: auto;
+}
+
+.subtitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card img {
+  height: 12em;
+  position: relative;
+  top: 15%;
+}
+
+.card h2 {
+  margin-bottom: 2rem;
+}
+
+.card p {
+  font-size: large;
+}
+
+.card:nth-child(even) div {
+  order: 2;
+}
+
+.card:nth-child(even) img {
+  position: relative;
+  left: 70%;
+}
+
+.about {
+  background-color: #37474f;
+  color: white;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  padding: 0px 250px;
+}
+
+.infoBox {
+  padding: 50px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  width: 30%;
+}
+
+.footerPara {
+  border-top: 2px solid orangered;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(201, 25, 201);
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn2 {
+  border: none;
+  background-color: #222222;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+
+.btn2:hover {
+  border: 1px solid magenta;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 80);
+  box-shadow: 2px 2px 5px orange;
+  color: black;
+}
+.about .container .infoBox input {
+  height: 2em;
+  width: 60%;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.top img {
+  height: 4em;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+.infoBox ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.infoBox ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.infoBox ul li a {
+  color: white;
+  transition: 0.2s ease;
+}
+
+.infoBox ul li a:hover {
+  color: magenta;
+}
+/* ......................................second page css......................................................*/
+
+header {
+  text-align: center;
+  padding: 5px;
+}
+
+header a {
+  cursor: pointer;
+  color: magenta;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .logo img {
+  height: 3em;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+nav {
+  font-weight: bold;
+  font-size: large;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  z-index: 999;
+}
+
+nav a {
+  color: rgb(168, 167, 167);
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: magenta;
+}
+
+nav button {
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ...............................................caraousel..................................................*/
+
+.slideshow-container {
+  width: 100%;
+  height: 63vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*............................................................caraousel end.....................................................*/
+
+.sections {
+  margin-bottom: 2%;
+}
+
+/*......................................................upcoming tournaments......................................................*/
+
+.landingSecond2 {
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+  top: 2em;
+}
+
+.contain ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.gameCards1 img {
+  height: 12em;
+  border-radius: 10px;
+  margin-bottom: 1.1em;
+}
+
+.contain ul li {
+  padding: 1.1em;
+}
+
+.contain ul li .eventInfo {
+  margin-bottom: 3%;
+}
+
+.contain ul li .prizeInfo {
+  color: rgb(5, 180, 5);
+}
+
+.contain ul li .prizeInfo span {
+  margin-right: 3%;
+}
+
+.contain {
+  text-align: center;
+}
+
+/*.......................................................trending games...........................................................*/
+
+.sections .gameCards2 img {
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.sections .gameCards2 img:hover {
+  transform: scale(1.2);
+}
+
+/*............................................................products...........................................................*/
+
+.slider li img {
+  height: 15em;
+}
+
+/*...............................................................videos..........................................................*/
+
+.gameCards4 {
+  position: relative;
+}
+
+.gameCards4 .play {
+  position: absolute;
+  height: 5em;
+  top: 45%;
+  right: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.gameCards4 li {
+  background-color: black;
+}
+
+.gameCards4 .overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 3;
+}

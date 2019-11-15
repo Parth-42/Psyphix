@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container5 {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      .container5 .itemCard {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        border: 1px solid whitesmoke;
+        grid-gap: 5em;
+        margin-bottom: 1%;
+        border-radius: 5px;
+      }
+
+      .container5 .itemCard img {
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+        cursor: pointer;
+      }
+      .search {
+        margin: 2em 5% 2em 5%;
+        background-color: rgb(17, 17, 17);
+        height: 7vh;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 10px;
+      }
+
+      .search select,
+      .search input {
+        width: 20%;
+        height: 50%;
+        background-color: rgb(17, 17, 17);
+        position: relative;
+        top: 50%;
+        transform: translate(0%, -50%);
+        border-radius: 10px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+
+      .infoShop {
+        margin-bottom: 2em;
+      }
+
+      .container5 .itemCard .infoShop h2 {
+        color: white;
+        font-size: 1.5em;
+      }
+      .container5 .itemCard .infoShop h3 {
+        color: rgb(247, 247, 121);
+      }
+
+      .cart img {
+        background-color: white;
+        height: 2em;
+      }
+
+      .loginCart {
+        display: flex;
+      }
+
+      .loginCart button {
+        height: 60%;
+      }
+
+      .loginCart a {
+        position: relative;
+        top: 10%;
+        font-size: 200%;
+      }
+
+      .loginCart span {
+        font-size: 200%;
+        position: relative;
+        top: 12%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Lobby info : <a>My Matches</a> |
+      <a href="//steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+        >Download App</a
+      >
+    </header>
+    <nav>
+      <div class="logo">
+        <a href="second.html"> <img src="images/gamecontroller.svg" alt=""/></a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="games.html">GAMES</a></li>
+          <li><a href="tournaments.html">TOURNAMENTS</a></li>
+          <li><a href="shop.html" style="color: magenta;">SHOP</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+        </ul>
+      </div>
+      <div class="loginCart">
+        <button class="btn" onclick="window.location.href = 'login.html'">
+          LOGIN
+        </button>
+        <div class="cart">
+          <a href="#">Cart : </a>
+          <span id="itemsCart">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search">
+      <h2>Search</h2>
+      <input type="text" />
+
+      <h2>Sort</h2>
+      <select name="Team Size" class="drop">
+        <option value="1">Price low to high</option>
+        <option value="2">Price high to low</option>
+        <option value="3">User rating</option>
+        <option value="4">Number of purchases</option>
+      </select>
+
+      <h2>Availability</h2>
+      <select name="Status" class="drop">
+        <option value="Live">Near me quick</option>
+        <option value="Open">Low price NCR</option>
+        <option value="Full">Foreign Export</option>
+      </select>
+    </div>
+
+    <div class="container5">
+      <div class="itemCard">
+        <div class="imgShop"><img src="images/shop/shop1.jpg" alt="" /></div>
+        <div class="infoShop">
+          <h2>Intel® Core™ I7-8700K Desktop Processor</h2>
+          <h3>₹29,5000</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ipsam at facere repellat ducimus repudiandae suscipit eaque
+            asperiores blanditiis ipsum!
+          </p>
+          <button class="btn">BUY NOW</button>
+          <button class="btn2" onclick="cart()">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="itemCard">
+        <div class="imgShop"><img src="images/shop/shop2.jpg" alt="" /></div>
+        <div class="infoShop">
+          <h2>Amd Ryzen 5 1600</h2>
+          <h3>₹8,999</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ipsam at facere repellat ducimus repudiandae suscipit eaque
+            asperiores blanditiis ipsum!
+          </p>
+          <button class="btn">BUY NOW</button>
+          <button class="btn2" onclick="cart()">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="itemCard">
+        <div class="imgShop"><img src="images/shop/shop3.jpg" alt="" /></div>
+        <div class="infoShop">
+          <h2>Colorful RTX 2070 Super 8GB</h2>
+          <h3>₹42,300</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ipsam at facere repellat ducimus repudiandae suscipit eaque
+            asperiores blanditiis ipsum!
+          </p>
+          <button class="btn">BUY NOW</button>
+          <button class="btn2" onclick="cart()">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="itemCard">
+        <div class="imgShop"><img src="images/shop/shop4.jpg" alt="" /></div>
+        <div class="infoShop">
+          <h2>Adata XPG Spectrix D40 8GB (8GBx1) DDR4 2400MHz RGB</h2>
+          <h3>₹3,800</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ipsam at facere repellat ducimus repudiandae suscipit eaque
+            asperiores blanditiis ipsum!
+          </p>
+          <button class="btn">BUY NOW</button>
+          <button class="btn2" onclick="cart()">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="itemCard">
+        <div class="imgShop"><img src="images/shop/shop5.jpg" alt="" /></div>
+        <div class="infoShop">
+          <h2>Cooler Master MASTERCASE H500P Mesh (Gun Metal)</h2>
+          <h3>₹12,800</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ipsam at facere repellat ducimus repudiandae suscipit eaque
+            asperiores blanditiis ipsum!
+          </p>
+          <button class="btn">BUY NOW</button>
+          <button class="btn2" onclick="cart()">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // document.querySelector("btn2").addEventListener("click", function() {
+      //   const count = 0;
+      //   count = count + 1;
+      //   document.getElementById("itemsCart").innerHTML = count;
+      // });
+      var count = 0;
+      function cart() {
+        count++;
+        document.getElementById("itemsCart").innerHTML = count;
+      }
+    </script>
+  </body>
+</html>

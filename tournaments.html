@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tournaments</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container4 {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .tourCard {
+        background-color: rgb(71, 71, 71);
+        width: 20em;
+        border-radius: 20px;
+        font-size: large;
+        color: rgb(212, 212, 212);
+        transition: 0.2s ease;
+      }
+
+      .tourCard:hover {
+        box-shadow: 2px 8px 10px black;
+      }
+
+      .tourCard img {
+        margin-top: 3em;
+        border-radius: 20px;
+      }
+      .tourCard span {
+        margin: 2em;
+      }
+
+      .tourCard button {
+        margin-top: 2em;
+        width: 80%;
+        margin-bottom: 3em;
+      }
+
+      .tourCard h2 {
+        color: white;
+      }
+
+      .search {
+        margin: 2em 5% 2em 5%;
+        background-color: rgb(17, 17, 17);
+        height: 7vh;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 10px;
+      }
+
+      .search select {
+        width: 20%;
+        height: 50%;
+        background-color: rgb(17, 17, 17);
+        position: relative;
+        top: 50%;
+        transform: translate(0%, -50%);
+        border-radius: 10px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+
+      #overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        width: 20%;
+        height: 20%;
+        text-align: center;
+        border: 3px solid orange;
+      }
+
+      #overlay p {
+        margin-top: 2em;
+      }
+
+      #overlay button {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-top: 10%;
+        margin-right: 5%;
+      }
+
+      .overlayScreen {
+        background-color: black;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Lobby info : <a>My Matches</a> |
+      <a href="//steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+        >Download App</a
+      >
+    </header>
+    <nav>
+      <div class="logo">
+        <a href="second.html"> <img src="images/gamecontroller.svg" alt=""/></a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="games.html">GAMES</a></li>
+          <li>
+            <a href="tournaments.html" style="color: magenta;">TOURNAMENTS</a>
+          </li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn" onclick="window.location.href = 'login.html'">
+          LOGIN
+        </button>
+      </div>
+    </nav>
+
+    <div class="search">
+      <h2>All Games</h2>
+      <select name="All Games">
+        <option value="PUBG">PUBG</option>
+        <option value="CSGO">CSGO</option>
+        <option value="Rainbow Six">Rainbow Six</option>
+        <option value="Dota 2">Dota 2</option>
+      </select>
+
+      <h2>Team Size</h2>
+      <select name="Team Size" class="drop">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <h2>Status</h2>
+      <select name="Status" class="drop">
+        <option value="Live">Live</option>
+        <option value="Open">Open</option>
+        <option value="Full">Full</option>
+      </select>
+    </div>
+
+    <div class="container4">
+      <div class="tourCard">
+        <img src="images/games/game1.jpg" alt="" />
+        <h2 id="tourName">PUBG Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game3.jpg" alt="" />
+        <h2>CyberPunk Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game5.jpg" alt="" />
+        <h2>CoD Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game4.jpg" alt="" />
+        <h2>CS:GO Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game2.jpg" alt="" />
+        <h2>Fortnite Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game8.jpg" alt="" />
+        <h2>RDR2 Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game7.jpg" alt="" />
+        <h2>WWE Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game9.jpg" alt="" />
+        <h2>Spiderman Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game10.jpg" alt="" />
+        <h2>NFS Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game11.jpg" alt="" />
+        <h2>GTA Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game12.jpg" alt="" />
+        <h2>Dota Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+
+      <div class="tourCard">
+        <img src="images/games/game5.jpg" alt="" />
+        <h2>CoD Tournament</h2>
+        <span>17 Nov | 12:00pm</span><br />
+        <span>Players : 3456/10000</span><br />
+        <span>Prize : 20000</span><br />
+        <button class="btn" onclick="join()">JOIN</button>
+      </div>
+    </div>
+
+    <div id="overlay">
+      <p id="overText"></p>
+      <button class="btn" onclick="yes()" id="open">Yes</button
+      ><button class="btn2" id="close" onclick="no()">No</button>
+      <a href="" onclick="close()">Close</a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

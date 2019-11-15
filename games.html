@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .imgGame {
+      justify-content: center;
+    }
+    h1,
+    input {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .search {
+      margin: 2em 5% 2em 5%;
+      background-color: rgb(17, 17, 17);
+      height: 7vh;
+      display: flex;
+      justify-content: space-evenly;
+      border-radius: 10px;
+    }
+
+    .search select {
+      width: 20%;
+      height: 50%;
+      background-color: rgb(17, 17, 17);
+      position: relative;
+      top: 50%;
+      transform: translate(0%, -50%);
+      border-radius: 10px;
+      font-weight: bold;
+      color: whitesmoke;
+    }
+    .container3 img {
+      border-radius: 10px;
+      transition: 0.2s ease;
+    }
+
+    .container3 img:hover {
+      transform: scale(1.2);
+    }
+
+    .search {
+      margin: 2em 5% 2em 5%;
+      background-color: rgb(17, 17, 17);
+      height: 7vh;
+      display: flex;
+      justify-content: space-evenly;
+      border-radius: 10px;
+    }
+
+    .search select {
+      width: 20%;
+      height: 50%;
+      background-color: rgb(17, 17, 17);
+      position: relative;
+      top: 50%;
+      transform: translate(0%, -50%);
+      border-radius: 10px;
+      font-weight: bold;
+      color: whitesmoke;
+    }
+  </style>
+  <body>
+    <header>
+      Lobby info : <a>My Matches</a> |
+      <a href="//steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+        >Download App</a
+      >
+    </header>
+    <nav>
+      <div class="logo">
+        <a href="second.html"> <img src="images/gamecontroller.svg" alt=""/></a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="games.html" style="color: magenta;">GAMES</a></li>
+          <li><a href="tournaments.html">TOURNAMENTS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="btn" onclick="window.location.href = 'login.html'">
+          LOGIN
+        </button>
+      </div>
+    </nav>
+
+    <div class="search">
+      <select name="All Games">
+        <option value="PUBG">Platforms</option>
+        <option value="PUBG">PC</option>
+        <option value="CSGO">PS4</option>
+        <option value="Rainbow Six">XBox</option>
+        <option value="Dota 2">Mobile</option>
+      </select>
+
+      <select name="Team Size" class="drop">
+        <option value="1">Genres</option>
+        <option value="2">Shooting</option>
+        <option value="3">Racing</option>
+        <option value="4">Sports</option>
+      </select>
+    </div>
+    <div class="container3">
+      <div class="imgGame"><img src="images/games/game1.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game2.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game3.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game4.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game5.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game6.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game7.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game8.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game9.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game10.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game11.jpg" alt="" /></div>
+      <div class="imgGame"><img src="images/games/game12.jpg" alt="" /></div>
+    </div>
+  </body>
+</html>
